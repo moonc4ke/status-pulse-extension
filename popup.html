@@ -1,0 +1,47 @@
+<!-- popup.html -->
+<!doctype html>
+<html>
+  <head>
+    <title>StatusPulse Recorder</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 15px;
+        font-family: system-ui;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .btn-start {
+        background: #4caf50;
+        color: white;
+      }
+
+      .btn-stop {
+        background: #ff4444;
+        color: white;
+        display: none;
+      }
+
+      .status {
+        text-align: center;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="status" id="status">Not Recording</div>
+    <button id="startBtn" class="btn btn-start">Start Recording</button>
+    <button id="stopBtn" class="btn btn-stop">Stop Recording</button>
+
+    <script src="js/popup.js"></script>
+  </body>
+</html>
